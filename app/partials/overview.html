@@ -1,0 +1,24 @@
+<div id="dinnerSummaryView">
+  <div class='row myDinnerBanner'>
+    <div class='col-md-6'><h3>My Dinner: {{getNumberOfGuests()}} people</h3></div>
+    <div class='col-md-6'>
+      <a type='submit' class='btn btn-default pull-right backToEditButton' id='sBackToEdit' ng-href="#/search">Go back and edit dinner</a>
+    </div>
+  </div>
+
+  <div class="row" id='dinnerSummaryTable'>
+    <div class='col-md-2'></div>
+    <div ng-repeat="dish in menu">
+      <div class='col-md-2'>
+        <figure class='dishSummaryFigure'>
+          <img class='dishSummaryImage' ng-src="{{dish.ImageURL}}">
+          <figcaption style='text-align:center;' class='dishName'>{{dish.Title}}</figcaption>
+          <figcaption class='dishPrice' style='text-align:right;'>{{getDishPrice(dish)}}</figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class='col-md-2' id='priceSummary'><p>Total: <br />{{getTotalMenuPrice()}} SEK</p></div>
+  </div>
+  <hr class='breakLine'>
+  <div id='printButtonDiv'><a class='btn btn-default' id='printRecipeButton' ng-href="#/instructions">Print Full Recipe</a></div>
+</div>

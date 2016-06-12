@@ -1,0 +1,15 @@
+<div id="dinnerInstructionsView">
+  <div class='row myDinnerBanner'>
+    <div class='col-md-6'><h3>My Dinner: {{getNumberOfGuests()}} people</h3></div>
+    <div class='col-md-6'><a class='btn btn-default pull-right backToEditButton' id='iBackToEdit' ng-href="#/search">Go back and edit dinner</a></div>
+  </div>
+
+  <table id='dinnerInstructionsTable'>
+    <tr ng-repeat="dish in menu">
+      <td class='col-md-2 imageCol'><img class='instructionsImage' ng-src='{{dish.ImageURL}}'></td>
+      <td class='col-md-4 desciptionCol'><h3>{{dish.Title}}</h3>{{dish.Description}}</td>
+      <td class='col-md-6 preparationCol'><h4>Preparation</h4>{{dish.Instructions}}</td>
+    </tr>
+  </table>
+
+</div>

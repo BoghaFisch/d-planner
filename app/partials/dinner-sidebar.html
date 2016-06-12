@@ -1,0 +1,25 @@
+
+
+<!-- TODO in Lab 5: Display the items on the menu with cost for each -->
+
+
+<!-- Displaying number of guests both in input box and here is redundant. It is here only for the example
+purpose so you can see how some information from the model can be retrieved. In Lab 5 you will replace
+this with Total price of the menu -->
+<div id="overviewTop"><h3>My dinner</h3><label>People: </label><input type="number" ng-model="numberOfGuests" ng-change="setNumberOfGuest(numberOfGuests)"/></div>
+
+<table class=".table col-md-12" id="dishesTable"><thead><tr id="dishesTableHeader"><th class="col-md-1"></th><th class="col-md-8">Dish:</th><th class="col-md-2">Cost</th><th></th></tr></thead>
+  <tr class="dtItem" ng-repeat="dish in menu">
+    <td id="numOfCourse">{{numberOfGuests}}</td>
+    <td>{{dish.Title}}</td>
+    <td class="totCoursePrice">{{getDishPrice(dish)}}</td>
+    <td><button class="glyphicon glyphicon-remove" ng-click="removeDishFromMenu(dish)"></button></td>
+  </tr>
+  <tr><td></td><td>Pending</td><td id='pendingPrice'>{{getDetailedDishPrice()}}</td><td></td></tr>
+  <tr><td colspan=4><hr class='breakLine'></td></tr>
+  <tr><td></td><td></td><td id='totalMenuPrice' colspan=2>SEK: {{getTotalMenuPrice()}}</td></tr>
+
+
+</table>
+
+<a ng-click="clearDetailedDish()" ng-href="#/overview" class="btn btn-default" id="confirmButton">Confirm dinner</a>

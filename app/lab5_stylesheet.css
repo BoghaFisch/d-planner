@@ -1,0 +1,309 @@
+/* Index page */
+.mainContainer {
+  text-align: left;
+  padding-bottom: 10%;
+  margin-bottom: 6%;
+}
+#homeView {
+  height:600px;
+  background-image:url(images/peopleEating.jpg);
+}
+#pageHeader {
+  border-width:0px 0px 2px 0px;
+  border-style: solid;
+  margin-bottom: 0px;
+  background-color: #fff;
+}
+ /* Header */
+#homeletteHeading {
+  display:inline;
+  font-family:cursive;
+}
+#homeletteSlogan {
+  padding-left: 5%;
+  display:inline;
+  font-style: italic;
+}
+/** General **/
+.leftContainer {
+  padding-left: 0px;
+  padding-right: 0px;
+  border-width: 0px 2px 0px 0px;
+  border-style: solid;
+  min-height: 600px;
+}
+.leftContainer h3 {
+  margin-left: 50px;
+}
+.leftContainer label {
+  margin-left: 50px;
+}
+.rightContainer {
+  padding-left: 0px;
+}
+/** Home **/
+#homeDescriptionBox {
+  padding-top:30px;
+  padding-bottom:30px;
+  margin-top: 100px;
+  background-color: #FCFCFC;
+  background: rgba(250, 250, 250, 0.8);
+}
+#lineBreak {
+  height:2px;
+  background-color: #333;
+  border:none;
+}
+#newDinnerButton {
+  background-color: #E9CE84;
+  padding:10px 15px 10px 15px;
+  border-width:2px;
+  border-style:solid;
+  border-color: #000;
+}
+/** Dinner overview **/
+#overviewTop {
+  padding-top: 15px;
+  padding-bottom:15px;
+}
+#numberOfGuestsInput {
+  width:50px;
+}
+#dishesTableHeader {
+  border-width:2px 0px 2px 0px;
+  border-style: solid;
+  background-color:#AAAAAA;
+}
+#dishesTableHeader th {
+  padding-top: 6px;
+  padding-bottom:6px;
+  padding-left: 25px;
+}
+#dishesTable td {
+  padding-top:14px;
+  padding-left: 30px;
+  font-size:13px;
+  padding-bottom: 9px;
+}
+#dishesTable .glyphicon {
+  margin-right:10px;
+  color:DarkRed;
+}
+.dtItem {
+  background-color: #EEEEEE;
+  border-width:1px;
+  border-color:black;
+  border-style:solid;
+  margin-right:0px;
+}
+#totalMenuPrice {
+  text-align:left;
+}
+.breakLine {
+  border-width:1px;
+  border-style:solid;
+  margin-left: 20px;
+  margin-right:20px;
+  padding-top: 0px;
+  padding-bottom:0px;
+  border-color:black;
+}
+#confirmButton {
+  margin-top: 20px;
+  width:80%;
+  background-color:rgb(233,206,132);
+  border-style:solid;
+  border-width:2px;
+  border-color:black;
+  margin-left:50px;
+}
+
+/** Right container **/
+#rightContainer {
+  padding-left:0px;
+  padding-top:0px;
+}
+/** Select at top **/
+#selectType {
+  margin-left: 50px;
+}
+#searchForDishView {
+  background-color:rgb(233,206,132);
+  padding-left: 40px;
+  margin-top:0px;
+  border-bottom: 1px;
+  border-bottom-style: solid;
+  border-color:black;
+  padding-bottom:30px;
+}
+#searchForDishHeader {
+  margin-top:0px;
+  padding-top:30px;
+  margin-left: 20px;
+  margin-right:20px;
+}
+#searchForm {
+  margin-left: 20px;
+  margin-right:20px;
+}
+
+/** dishesResultsTable **/
+#dishesResults {
+  margin-left:50px;
+  overflow: scroll;
+  height:400px;
+}
+
+.dishDescription {
+  margin-top: 8px;
+  margin-left:2px;
+  font-size:11px;
+}
+.dishResult {
+  padding-top:50px;
+}
+.dishResultsFigure {
+  width:200px;
+  border-width:1px;
+  border-color:black;
+  border-style:solid;
+  font-weight: bold;
+  background-color:#AAAAAA;
+}
+.dishResultsFigure img {
+  width:200px;
+  height:170px;
+}
+.dishResultsFigure figcaption {
+  border-width:1px;
+  border-color:black;
+  border-style:solid;
+  font-color:black;
+  font-weight: bold;
+  background-color:#AAAAAA;
+}
+
+/** Dish details **/
+#dishDescription {
+  padding-left:100px;
+}
+#selectedDishFig {
+  padding-top: 10px;
+}
+#selectedDishFig img {
+  width:300px;
+  height:270px;
+}
+#selectedDishFig figcaption {
+  padding-top:12px;
+  width:300px;
+}
+#confirmDishButton {
+  background-color:#E89E17;
+  margin-top:12px;
+}
+#backToSelectButton {
+  background-color:#E89E17;
+  margin-top:12px;
+}
+#dishIngredients {
+  background-color:rgb(233,206,132);
+  padding-bottom:30px;
+  border-style: solid;
+  border-color:black;
+  border-width:2px;
+}
+#ingredientsHeader {
+  padding-left: 20px;
+  font-weight: bold;
+}
+#dtIngredientsTable td {
+  padding-left: 30px;
+  padding-bottom:15px;
+}
+#preparationInstructions {
+  padding-left:83px;
+  padding-bottom:100px;
+}
+/** Dinner summary view **/
+.backToEditButton {
+  margin-right: 50px;
+  margin-top:18px;
+  background-color:#E89E17;
+  border-width: 2px;
+  border-style:solid;
+  border-color:black;
+}
+.myDinnerBanner {
+  margin-top:0px;
+  padding-bottom: 10px;
+  background-color:rgb(233,206,132);
+  border-bottom-color: black;
+  border-bottom-style:solid;
+  border-bottom-width: 2px;
+}
+.myDinnerBanner h3 {
+  padding-left: 30px;
+}
+#dinnerSummaryTable {
+  margin-top:80px;
+  margin-bottom:80px;
+}
+.dishSummaryImage {
+  width:200px;
+  height:170px;
+  border-width:2px;
+  border-color:black;
+  border-style:solid;
+}
+.dishSummaryFigure {
+  width:200px;
+}
+.dishName {
+  padding-top:10px;
+  background-color:#AAAAAA;
+  padding-bottom:10px;
+  border-style:solid;
+  border-width:0px 2px 2px 2px;
+  border-color:black;
+}
+#priceSummary {
+  vertical-align: bottom;
+  border-left-width:2px;
+  border-left-style:solid;
+  border-left-color:black;
+  height:100%;
+}
+#priceSummary p {
+  margin-bottom:0px;
+}
+.dishPrice {
+  margin-top:10px;
+}
+#printRecipeButton {
+  width:400px;
+  background-color:#E89E17;
+  border-width: 2px;
+  border-style:solid;
+  border-color:black;
+  font-weight: bold;
+  font-size:16px;
+}
+#printButtonDiv {
+  text-align:center;
+}
+/** Dinner instructions **/
+#dinnerInstructionsTable td {
+  padding-top:60px;
+  padding-left:60px;
+}
+.instructionsImage {
+  height:160px;
+  width:160px;
+  border-style:solid;
+  border-color:black;
+  border-width:2px;
+}
+.preparationCol {
+  padding-right:60px;
+}
